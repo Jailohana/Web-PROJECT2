@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+#logo{
+ margin: 0px 24px;
+}
+
+#f{
+    padding-left: 50px;
+    margin: -19px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(255, 0, 0);
+}
+#logo img{
+margin: 15px 10px;
+width:150px;
+border-radius: 70%;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    top: 0px;
+    position:absolute;
+    
+}
+#navbar ul{
+    display: flex;
+    margin-top:35px ;
+    margin-left: 250px;
+    /*border: 4px solid red;
+    border-radius: 50px;*/
+    padding-top: 5px;
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 2rem;
+}
+
+#navbar ul li a{ 
+    display: block;
+    padding-right:20px ;
+    padding-left: 20px;
+    padding-top: 25px;
+    text-decoration: none;
+    color: rgb(230, 17, 17);
+}
+#navbar ul li a:hover{
+  color: rgb(213, 14, 14);
+  background-color: white;
+  padding: 1rem 1rem;
+  border-radius: 25px;
+}
+
+    
+#navbar::before{
+    content:"";
+    /*background-color: rgb(255, 238, 0);*/
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+
+/*Home CSS*/
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 200px;
+    color: aqua;
+    height:520px;
+}
+#home::before{
+    content:"";
+    background:url(bg3.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 73%;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+
+}
+#home p{
+    color:  rgb(240, 233, 233);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif   ;
+}
+.btn:hover{
+    padding: 20px;
+    border-radius:20px ;
+    color:   black;
+}
+#home p:hover{
+    color: rgb(231, 20, 20);
+}
+/*Services*/
+#services{
+    margin:15px;
+    display:flex;
+    height: 500px;
+}
+#services::before{
+    content: "";
+    background:url(logo3.jpg) no-repeat center center/cover;
+    position:absolute;
+    height:70%;
+    width: 100%;
+    z-index: -1;
+
+    left: 0px;
+
+}
+#services .box{ 
+    border: 4px solid brown;
+    padding: 20px;
+    margin: 2px 55px;
+    border-radius: 50px;
+    background: #e7bf83;
+    margin-bottom: 20px;
+
+    
+}
+#services .box img{ 
+    height: 160px;   
+    margin: auto;
+    display: block;
+    border-radius: 30px;
+ }
+ 
+
+#contact{
+    position:relative;
+    height: 450px;
+}
+#contact::before{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    z-index: -1;
+    background: url('contact.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 25px;
+}
+#contact-box .form-group{
+    width: 50%;
+}
+#name{
+    width:300px;
+    border-radius: 10px; 
+}
+#number{
+    width:300px;
+    border-radius: 10px;
+}
+#email{
+    width:300px;
+    border-radius: 10px;
+}
+#message{
+    width:300px;
+    border-radius: 10px;
+}
+#submit{
+    width:300px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+#submit:hover{
+    background-color: brown;
+    cursor: pointer;
+}
+footer{
+    background-color: black;
+    color: #f2f2f2;
+    padding: 9px;
+}
+
+
+/*Utility classes*/
+.h-primary{
+    font-size: 2.5rem;
+    padding: 12px;
+    
+}
+.h-secondary{
+    font-size: 1.5rem;
+    padding: 12px;
+}
+.text-center{
+    text-align:center;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid red;
+    background-color: red;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
