@@ -1,0 +1,113 @@
+#contact{
+    position:relative;
+    height: 450px;
+}
+#contact::before{
+    position: absolute;
+    height: 150%;
+    width: 100%;
+    content: "";
+    z-index: -1;
+    background: url('contact.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 20px;
+    /* border: 20px solid white; */
+    
+}
+#contact-box .form-group{
+    width: 50%;
+    /* height: fit-content; */
+    /* border: 20px solid white; */
+}
+#name{
+    color: blue;
+    width:300px;
+    border-radius: 10px; 
+}
+#number{
+    width:300px;
+    border-radius: 10px;
+}
+#email{
+    width:300px;
+    border-radius: 10px;
+}
+#message{
+    width:300px;
+    border-radius: 10px;
+}
+#submit{
+    width:300px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+#submit:hover{
+    background-color: rgb(42, 63, 165);
+    cursor: pointer;
+    color: aliceblue;
+}
+.form-group{
+    color: aqua;
+}
+.followus{
+    margin-top: -400px;
+    color: aliceblue;
+    height: 100%;
+    margin-left: 20px;
+    margin-top: 50px;
+
+}
+h2{
+    display: flex;
+    color: aqua;
+    /* width: 500%;    */
+    /* justify-content: center; */
+}
+.follow{
+    display: flex;
+    /* text-align: center; */
+    /* justify-content: center; */
+    text-decoration: none;
+    /* width: 500%; */
+    text-align: left;
+    margin: 0px;
+    padding: 5px;
+
+    /* border: 20px solid rgb(252, 15, 15); */
+    
+}
+.ijk{
+    
+font-size: larger;    color: aliceblue;
+}
+/*Utility classes*/
+.h-primary{
+    font-size: 2.5rem;
+    padding: 12px;
+    color: aliceblue;
+    font-family: cursive;
+    
+}
+.h-secondary{
+    font-size: 1.5rem;
+    padding: 12px;
+}
+.text-center{
+    text-align:center;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid red;
+    background-color: red;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
